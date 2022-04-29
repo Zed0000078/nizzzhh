@@ -11,6 +11,7 @@ body{
     font-family: head;
     font-weight: bold;
     height:100%;
+    margin: 0;
 }
 header{
     margin-bottom:0;
@@ -29,6 +30,7 @@ header{
         text-transform: uppercase;
         font-size: 2em;
     }
+    
     nav ul{
         list-style: none;
         display: flex;
@@ -38,24 +40,39 @@ header{
         padding: 0;
         li a{
             padding: 1em;
-
+            margin: 0.05em;
+            flex-direction: right;
         }
         
     }
 }
 .wrapper{
-    display: flex;
+    display: grid;
     grid-template-columns: auto;
 
     section {
-        padding:3em;
+        padding:2em;
         h1,h2{
             text-transform: uppercase;
             font-family: desc;
+            color:#c71423;
+            font-size: 4em;
+            letter-spacing:5px;
 
         }
-        h2{
-            font-size: 1.4rem;
-        }
+        
+    }
+    .down{
+        text-decoration: none;
+        color: #000000;
+        padding: 1em;
+        font-weight: 2em;
+        right: 0;
+        position: fixed;
+        border: 1px solid #ff4655;
+        border-radius:1em;
+        
+        
     }
 }
+
