@@ -1,50 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Nishant</title>
-</head>
-<body>
-    <header>
-        <a href="#" class="logo">Nishant Kumar</a>
-        <nav>
-            <ul>
-                <li><a target="_blank" href="https://www.facebook.com/nissshh2021/"><img width="40px" src="assets/facebook.png" alt=""></a></li>
-                <li><a target="_blank"  href="https://www.instagram.com/nissshh.exe"><img width="40px" src="assets/instagram.png" alt=""></a></li>
-                <li><a target="_blank"  href="https://github.com/nizzzhh"><img width="40px" src="assets/github.png" alt=""></a></li>
-                <li><a target="_blank"  href="https://www.linkedin.com/in/nishant-kumar-aba281185/"><img width="40px" src="assets/linkedin.png" alt=""></a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="wrapper">
-        <section class="hero">
-            <div class="inner">
-                <div class="inner">
-               <h1>Hi, I'm NISHANT</h1> 
-            </div>
-            <div class="anim-panel">
-               <p>A young and creative Front-End Developer </p>
-               <a href="#" class="down">Know More</a>
-            </div>
-        </div>
-        </section>
-        <section class="sidebar">
-                <div class="inner">
-                    <div class="clipper">
-                        <h2>About Me</h2>
-                        <div class="anim-panel">
-                            I am an Indian native of Bihar and completed my schooling from Jharkhand.Currently, I am a Final Year student at LOVELY PROFESSIONAL UNIVERSITY,Jalandhar, Punjab.
-                            I am a determinant person and always wanting to learn new things.I actively follow news feed for tech world.
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section class="contact">
-                <button class="email">Mail Me</button>
-        </section>
-    </div>
-</body>
-</html>
+
+<html>
+  <head>
+  <title>Hiiiiii</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+  h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bolder;
+  }
+  img {
+  display: block;
+  margin: 0 auto;
+  width: 25%;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+  </style>
+  </head>
+  <body>
+    <br><br><br>
+  <h1 style="color:black">Can we hang out soon?</h1>
+  <img src="https://media.giphy.com/media/Bkcls2eA8Fc6A/giphy-downsized-large.gif">
+  </body>
+  <title>Botões</title>
+  <style>
+  #yes {
+  position: fixed;
+  top: 70%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  background-color:#F51720;
+  border: none ;
+  font-size: 2em;
+  padding: 20px;
+  border-radius:0.5em; 
+  color:white;
+  
+  
+  }
+  #no {
+  position: absolute;
+   left: random() + '%';
+    top: 68%;
+    background-color:#4C5270;
+  border: none ;
+  font-size: 2em;
+  padding: 20px;
+  border-radius:0.5em; 
+  color:white;
+  }
+  
+  
+  
+  </style>
+  </head>
+  <body style="background-color:#36EEE0;color:#EF7C8E">
+  <button id="yes">YES BBY!</button>
+  <button id="no" >NO</button>
+  <script>
+  const button2 = document.getElementById('no');
+  let left = 40;
+  button2.addEventListener('mouseover', function() {
+    if(left == 40){
+      left = 44;
+    }else{
+      left = Math.floor(Math.random() * 50);
+      
+      console.log(left);
+    }
+    this.style.left = left + '%';
+  });
+  
+  </script>
+  <script>document.getElementById('yes').addEventListener('click', function() {
+  alert('YAYY THANK U LOVE U');
+  });
+  </script>
+  </body>
+  </html>
